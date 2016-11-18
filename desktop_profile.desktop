@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Desktop Profile Switcher
+Exec=<YOUR PATH TO THE SCRIPT>
+Terminal=false
+Type=Application
+X-GNOME-Autostart-enabled=true
