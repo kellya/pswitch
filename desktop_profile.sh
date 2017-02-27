@@ -100,11 +100,18 @@ fi
 #Now we just set the profile name based on whatever the screen resolution is
 RES=$(getResolution)
 case $RES in
-	'3840x1080')
-		NEWPROFILE="'default'"
-		;;
-	'1920x1080')
-		NEWPROFILE="'laptop_screen'"
+# If the profile names are the same as the resolution, you don't have to do
+# anything.  If you have given your profiles text names, just make entries like
+# the following to match the resolution to a name.  Ensure the profile name is
+# in single and double quotes as shown, "'like_this'"
+#	'3840x1080')
+#		NEWPROFILE="'default'"
+#		;;
+#	'1920x11080')
+#		NEWPROFILE="'laptop_screen'"
+#		;;
+	[0-9]*x[0-9]*)
+		NEWPROFILE="'$RES'"
 		;;
 	*)
 		echo "Don't have images for $RES resolution"
