@@ -7,7 +7,9 @@ Just executing the script should do the magic, but if you wish, you may have it 
 ## Configuration
 ### Easy Method
 Simply create a profile in the desk-changer plugin configuration that matches your resolution.  You can get your current resolution by running:
+
 	desktop_profile getres
+
 ### Marginally more difficult method
 If you already have profiles set up and don't want to change the names, you can map them in the script's case statment.  Where there are blocks like:
 
